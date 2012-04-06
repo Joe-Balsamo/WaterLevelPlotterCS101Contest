@@ -77,6 +77,5 @@ def crawl_web(seed): # returns index, graph of inlinks
         crawled.append(page)
     return index, graph
 
-#index, graph = crawl_web('http://www.udacity.com/cs101x/final/multi.html')
 crawl_web('http://www.sandiego.gov/water/recreation/levels.shtml')
 
