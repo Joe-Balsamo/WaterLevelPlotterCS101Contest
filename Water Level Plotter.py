@@ -51,11 +51,6 @@ def add_to_index(index, keyword, url):
     else:
         index[keyword] = [url]
 
-#def lookup(index, keyword):
-#    if keyword in index:
-#        return index[keyword]
-#    else:
-#        return None
 
 def crawl_web(seed): # returns index, graph of inlinks
     tocrawl = [seed]
