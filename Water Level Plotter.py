@@ -68,12 +68,8 @@ def crawl_web(seed): # returns index, graph of inlinks
         content = get_page(page)
         soup = BeautifulSoup(content)
         blockText = soup.findAll(text="Miramar")[0].parent.parent.parent
-        print(blockText.get_text())
-
-        #        for link in soup.find_all('a'):
-        #            print(link.get('href'))
-        #        for eachItem in blockText:
-        #            print "Item:", eachItem
+        blockText = (blockText.get_text())
+        print blockText.strip()
         add_page_to_index(index, page, content)
         outlinks = get_all_links(content)
         graph[page] = outlinks
