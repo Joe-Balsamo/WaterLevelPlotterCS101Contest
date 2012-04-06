@@ -1,4 +1,5 @@
 __author__ = 'jbalsamo'
+
 from bs4 import BeautifulSoup
 import urllib
 
